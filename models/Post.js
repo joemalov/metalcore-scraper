@@ -12,7 +12,7 @@ var PostSchema = new Schema({
   img: {
     type: String
   },
-  // `link` is required and of type String
+
   link: {
     type: String,
     unique: true,
@@ -24,7 +24,7 @@ var PostSchema = new Schema({
   published: {
     type: String
   },
-  // `comments` is an object that stores a Comment ids
+
   comments: [
     {
       type: Schema.Types.ObjectId,
@@ -35,5 +35,4 @@ var PostSchema = new Schema({
 
 var Post = mongoose.model("Post", PostSchema);
 
-// Export the Article model
 module.exports = Post;
