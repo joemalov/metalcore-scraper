@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>R/Metalcore Scraper</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="/assets/css/style.css">
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="/assets/js/scraper.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>R/Metalcore Scraper</h1>
+        <p><a class="btn btn-lg btn-success" id="scrapeBtn" href="#" role="button">Scrape New Posts</a></p>
+      </div>
+
+			{{{ body }}}
+
+		</div>
+
+		<div class="modal fade" id="commentModal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div id="modalCommentContainer"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
